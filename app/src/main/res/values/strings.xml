@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyWallet</string>
+
+    <!-- Tabs name or Tile -->
+    <string name="tab_due">Due</string>
+    <string name="tab_owe">Owe</string>
+    <string name="tab_past">Past</string>
+
+    <!-- Strings for icons -->
+    <string name="searchIcon">Search</string>
+</resources>

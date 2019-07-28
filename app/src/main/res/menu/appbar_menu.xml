@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/searchIcon"
+        android:title="Search"
+        android:icon="@drawable/ic_search_magnifier_interface_symbol"
+        app:showAsAction="ifRoom"/>
+
+    <!-- These options are in the Overflow Menu -->
+    <item
+        android:id="@+id/preferences"
+        android:title="Preferences"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/help"
+        android:title="Help"
+        app:showAsAction="never"/>
+
+
+    <item
+        android:id="@+id/about"
+        android:title="About"
+        app:showAsAction="never"/>
+
+
+</menu>
