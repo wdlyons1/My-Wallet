@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity
 
@@ -18,10 +19,10 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar toolbar = (Toolbar)findViewById(R.id.tool_bar);
+        Toolbar toolbar = findViewById(R.id.tool_bar);
 
         setSupportActionBar(toolbar);
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
+        TabLayout tabLayout = findViewById(R.id.tab_layout);
         tabLayout.addTab(tabLayout.newTab().setText(R.string.tab_due));
         tabLayout.addTab(tabLayout.newTab().setText(R.string.tab_owe));
         tabLayout.addTab(tabLayout.newTab().setText(R.string.tab_past));
@@ -89,4 +90,39 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
+    /*
+    Creates all Listeners for the menu buttons
+     */
+
+    //Listener for Search (menu) button
+    public void onClickSearch(MenuItem item) {
+    }
+
+
+    //Listener for Add (menu) button
+    public void onClickAdd(MenuItem item) {
+    }
+
+    //Listener for Edit (menu) button
+    public void onClickEdit(MenuItem item) {
+    }
+
+    //Listener for Preferences (menu) button
+    public void onClickPreferences(MenuItem item) {
+    }
+
+    //Listener for Help (menu) button
+    public void onClickHelp(MenuItem item) {
+    }
+
+    //Listener for About (menu) button
+    public void onClickAbout(MenuItem item) {
+    }
+
+    /*
+    Listener for the add card button on fragments
+     */
+
+    public void onClickAdd(View view) {
+    }
 }

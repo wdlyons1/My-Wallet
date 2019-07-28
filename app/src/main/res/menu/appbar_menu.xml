@@ -6,24 +6,41 @@
         android:id="@+id/searchIcon"
         android:title="Search"
         android:icon="@drawable/ic_search_magnifier_interface_symbol"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="ifRoom"
+        android:onClick="onClickSearch"/>
+
+    <item
+        android:id="@+id/addIcon"
+        android:title="Add"
+        app:showAsAction="ifRoom"
+        android:onClick="onClickAdd"
+        />
 
     <!-- These options are in the Overflow Menu -->
     <item
+        android:id="@+id/edit"
+        android:title="Edit"
+        app:showAsAction="never"
+        android:onClick="onClickEdit"/>
+
+    <item
         android:id="@+id/preferences"
         android:title="Preferences"
-        app:showAsAction="never"/>
+        app:showAsAction="never"
+        android:onClick="onClickPreferences"/>
 
     <item
         android:id="@+id/help"
         android:title="Help"
-        app:showAsAction="never"/>
+        app:showAsAction="never"
+        android:onClick="onClickHelp"/>
 
 
     <item
         android:id="@+id/about"
         android:title="About"
-        app:showAsAction="never"/>
+        app:showAsAction="never"
+        android:onClick="onClickAbout"/>
 
 
 </menu>
