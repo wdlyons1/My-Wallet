@@ -5,6 +5,11 @@
     <string name="tab_due">Due</string>
     <string name="tab_owe">Owe</string>
     <string name="tab_past">Past</string>
+    <string name="about">
+        My Wallet is an app that helps you keep track of who owes money to you and who you owe money to. Did you split an Uber or Lyft with a friend and need
+        to pay them back? Perhaps you helped another friend with a concert ticket until they get paid. With My Wallet these transactions will stay at the
+        top of your mind.
+    </string>
 
     <!-- Strings for icons -->
     <string name="searchIcon">Search</string>

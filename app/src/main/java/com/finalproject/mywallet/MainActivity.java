@@ -1,5 +1,7 @@
 package com.finalproject.mywallet;
 
+import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -10,14 +12,19 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity
+public class MainActivity extends AppCompatActivity {
 
-{
+    private SQLiteDatabase mDatabase;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+ //       Database dbhelper = new Database(this);
+ //       mDatabase = dbhelper.getWritableDatabase();
+
 
         Toolbar toolbar = findViewById(R.id.tool_bar);
 
@@ -101,6 +108,8 @@ public class MainActivity extends AppCompatActivity
 
     //Listener for Add (menu) button
     public void onClickAdd(MenuItem item) {
+//        Intent intent = new Intent(this, );
+//        startActivity(intent);
     }
 
     //Listener for Edit (menu) button
@@ -117,6 +126,8 @@ public class MainActivity extends AppCompatActivity
 
     //Listener for About (menu) button
     public void onClickAbout(MenuItem item) {
+        Intent intent = new Intent(this, AboutScreen.class);
+        startActivity(intent);
     }
 
     /*

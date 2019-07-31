@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parent_layout">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/image_person"
+        android:src="@drawable/ic_person_black_24dp"
+        android:onClick="changePicture"
+        />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Person1"
+        android:layout_toRightOf="@id/image_person"
+        android:textColor="#000"
+   android:paddingTop="12dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="24sp"
+        />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/image_person"
+        android:text="email address" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="$10.00"
+        android:layout_centerVertical="true"
+        android:textSize="36dp"
+        android:paddingRight="20dp"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

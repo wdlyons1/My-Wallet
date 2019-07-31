@@ -13,6 +13,7 @@
         android:id="@+id/addIcon"
         android:title="Add"
         app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_add_white_24dp"
         android:onClick="onClickAdd"
         />
 
