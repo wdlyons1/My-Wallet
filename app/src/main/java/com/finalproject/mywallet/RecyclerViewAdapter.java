@@ -1,4 +1,4 @@
-package com.finalproject.mywallet;
+/*package com.finalproject.mywallet;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -55,11 +55,11 @@ public class RecyclerViewAdapter  extends RecyclerView.Adapter<RecyclerViewAdapt
             }
 
             String name = (mCursor.getString(mCursor.getColumnIndex(Database.col2)) + " " + mCursor.getString(mCursor.getColumnIndex(Database.col3)));
-            int amount = mCursor.getInt(mCursor.getColumnIndex(Database.colll3));
+            String amount = mCursor.getString(mCursor.getColumnIndex(Database.colll3));
             String email = mCursor.getString(mCursor.getColumnIndex(Database.coll1));
 
             holder.nameText.setText(name);
-            holder.amount.setText(String.valueOf(amount));
+            holder.amount.setText(amount);
             holder.email.setText(email);
         }
 
@@ -79,10 +79,12 @@ public class RecyclerViewAdapter  extends RecyclerView.Adapter<RecyclerViewAdapt
                 notifyDataSetChanged();
             }
         }
+
+
     }
     
     
     
-    
+    */
     
 

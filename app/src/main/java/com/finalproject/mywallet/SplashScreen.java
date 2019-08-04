@@ -9,15 +9,16 @@ import android.widget.ImageView;
 
 public class SplashScreen extends AppCompatActivity {
 
+    int anim = R.anim.animation1;
 
-        Animation animation;
+    Animation animation;
         ImageView logo;
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_splash_screen);
             logo = findViewById(R.id.imageView2);
-            animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.animation1);
+            animation = AnimationUtils.loadAnimation(getApplicationContext(), anim);
             animation.setAnimationListener(new Animation.AnimationListener() {
                 @Override
                 public void onAnimationStart(Animation animation) {

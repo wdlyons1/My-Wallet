@@ -1,11 +1,13 @@
 package com.finalproject.mywallet;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -14,16 +16,13 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
-    private SQLiteDatabase mDatabase;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
- //       Database dbhelper = new Database(this);
- //       mDatabase = dbhelper.getWritableDatabase();
 
 
         Toolbar toolbar = findViewById(R.id.tool_bar);
@@ -108,8 +107,8 @@ public class MainActivity extends AppCompatActivity {
 
     //Listener for Add (menu) button
     public void onClickAdd(MenuItem item) {
-//        Intent intent = new Intent(this, );
-//        startActivity(intent);
+        Intent intent = new Intent(this, Add_Customer.class);
+        startActivity(intent);
     }
 
     //Listener for Edit (menu) button
@@ -118,11 +117,10 @@ public class MainActivity extends AppCompatActivity {
 
     //Listener for Preferences (menu) button
     public void onClickPreferences(MenuItem item) {
+        Intent intent = new Intent(this, Preferences.class);
+        startActivity(intent);
     }
 
-    //Listener for Help (menu) button
-    public void onClickHelp(MenuItem item) {
-    }
 
     //Listener for About (menu) button
     public void onClickAbout(MenuItem item) {
@@ -135,5 +133,7 @@ public class MainActivity extends AppCompatActivity {
      */
 
     public void onClickAdd(View view) {
+        Intent intent = new Intent(this, Add_Customer.class);
+        startActivity(intent);
     }
 }
